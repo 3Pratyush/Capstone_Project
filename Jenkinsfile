@@ -36,6 +36,7 @@ pipeline {
             steps {
                 archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
                 archiveArtifacts artifacts: 'screenshots/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'test-output/**', allowEmptyArchive: true
             }
         }
     }
@@ -43,9 +44,8 @@ pipeline {
     post {
 
         always {
-            publishTestResults testResultsPattern: 'target/surefire-reports/*.xml'
-
-            archiveArtifacts artifacts: 'test-output/**', allowEmptyArchive: true
+            junit allowEmptyResults: true,
+                  testResults: 'target/surefire-reports/*.xml'
         }
 
         success {
