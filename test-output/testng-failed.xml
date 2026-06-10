@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GUI Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="GUI Tests(failed)">
+    <classes>
+      <class name="tests.DatePickerTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyDatePicker"/>
+        </methods>
+      </class> <!-- tests.DatePickerTest -->
+      <class name="tests.DropdownTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyDropdowns"/>
+        </methods>
+      </class> <!-- tests.DropdownTest -->
+      <class name="tests.SliderTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifySlider"/>
+        </methods>
+      </class> <!-- tests.SliderTest -->
+      <class name="tests.MouseActionsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyMouseActions"/>
+        </methods>
+      </class> <!-- tests.MouseActionsTest -->
+      <class name="tests.FormTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyForm"/>
+        </methods>
+      </class> <!-- tests.FormTest -->
+      <class name="tests.WikipediaTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyWikipediaSearch"/>
+        </methods>
+      </class> <!-- tests.WikipediaTest -->
+      <class name="tests.DynamicButtonTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyDynamicButton"/>
+        </methods>
+      </class> <!-- tests.DynamicButtonTest -->
+      <class name="tests.SectionFormTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifySections"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.SectionFormTest -->
+      <class name="tests.LinkTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyAppleLink"/>
+        </methods>
+      </class> <!-- tests.LinkTest -->
+      <class name="tests.ErrorPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyErrorPage"/>
+        </methods>
+      </class> <!-- tests.ErrorPageTest -->
+      <class name="tests.UploadTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyUpload"/>
+        </methods>
+      </class> <!-- tests.UploadTest -->
+      <class name="tests.ScrollingDropdownTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyScrollingDropdown"/>
+        </methods>
+      </class> <!-- tests.ScrollingDropdownTest -->
+      <class name="tests.AlertTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyAlerts"/>
+        </methods>
+      </class> <!-- tests.AlertTest -->
+      <class name="tests.ShadowDOMTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyShadowDOM"/>
+        </methods>
+      </class> <!-- tests.ShadowDOMTest -->
+    </classes>
+  </test> <!-- GUI Tests(failed) -->
+</suite> <!-- Failed suite [GUI Automation Suite] -->

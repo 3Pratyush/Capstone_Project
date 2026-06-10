@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  GUI Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GUI Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 10 15:09:34 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>219 seconds (219535 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ScrollingDropdownTest.verifyScrollingDropdown()'><b>verifyScrollingDropdown</b><br>Test class: tests.ScrollingDropdownTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ScrollingDropdownTest@38af9828</td></tr>
+<tr>
+<td title='tests.WikipediaTest.verifyWikipediaSearch()'><b>verifyWikipediaSearch</b><br>Test class: tests.WikipediaTest</td>
+<td></td>
+<td>11</td>
+<td>tests.WikipediaTest@4b86805d</td></tr>
+<tr>
+<td title='tests.SliderTest.verifySlider()'><b>verifySlider</b><br>Test class: tests.SliderTest</td>
+<td></td>
+<td>2</td>
+<td>tests.SliderTest@76b07f29</td></tr>
+<tr>
+<td title='tests.MouseActionsTest.verifyMouseActions()'><b>verifyMouseActions</b><br>Test class: tests.MouseActionsTest</td>
+<td></td>
+<td>4</td>
+<td>tests.MouseActionsTest@9cb8225</td></tr>
+<tr>
+<td title='tests.LinkTest.verifyAppleLink()'><b>verifyAppleLink</b><br>Test class: tests.LinkTest</td>
+<td></td>
+<td>13</td>
+<td>tests.LinkTest@376a0d86</td></tr>
+<tr>
+<td title='tests.SectionFormTest.verifySections()'><b>verifySections</b><br>Test class: tests.SectionFormTest</td>
+<td></td>
+<td>6</td>
+<td>tests.SectionFormTest@17d919b6</td></tr>
+<tr>
+<td title='tests.ShadowDOMTest.verifyShadowDOM()'><b>verifyShadowDOM</b><br>Test class: tests.ShadowDOMTest</td>
+<td></td>
+<td>28</td>
+<td>tests.ShadowDOMTest@53f3bdbd</td></tr>
+<tr>
+<td title='tests.DatePickerTest.verifyDatePicker()'><b>verifyDatePicker</b><br>Test class: tests.DatePickerTest</td>
+<td></td>
+<td>4</td>
+<td>tests.DatePickerTest@18317edc</td></tr>
+<tr>
+<td title='tests.DynamicButtonTest.verifyDynamicButton()'><b>verifyDynamicButton</b><br>Test class: tests.DynamicButtonTest</td>
+<td></td>
+<td>4</td>
+<td>tests.DynamicButtonTest@5852c06f</td></tr>
+<tr>
+<td title='tests.PaginationTableTest.verifyPaginationTable()'><b>verifyPaginationTable</b><br>Test class: tests.PaginationTableTest</td>
+<td></td>
+<td>9</td>
+<td>tests.PaginationTableTest@238d68ff</td></tr>
+<tr>
+<td title='tests.UploadTest.verifyUpload()'><b>verifyUpload</b><br>Test class: tests.UploadTest</td>
+<td></td>
+<td>4</td>
+<td>tests.UploadTest@4e0ae11f</td></tr>
+<tr>
+<td title='tests.AlertTest.verifyAlerts()'><b>verifyAlerts</b><br>Test class: tests.AlertTest</td>
+<td></td>
+<td>16</td>
+<td>tests.AlertTest@4149c063</td></tr>
+<tr>
+<td title='tests.DropdownTest.verifyDropdowns()'><b>verifyDropdowns</b><br>Test class: tests.DropdownTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DropdownTest@79defdc</td></tr>
+<tr>
+<td title='tests.ErrorPageTest.verifyErrorPage()'><b>verifyErrorPage</b><br>Test class: tests.ErrorPageTest</td>
+<td></td>
+<td>4</td>
+<td>tests.ErrorPageTest@62656be4</td></tr>
+<tr>
+<td title='tests.FormTest.verifyForm()'><b>verifyForm</b><br>Test class: tests.FormTest</td>
+<td></td>
+<td>7</td>
+<td>tests.FormTest@6d5620ce</td></tr>
+</table><p>
+</body>
+</html>
